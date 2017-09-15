@@ -1,0 +1,23 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd"  xmlns:dd="nativescript-drop-down" loaded="onLoaded" navigatedTo="navigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="{{ _playerName }}" icon="" class="action-bar">
+            <ActionItem tap="{{ onDelete }}" android.systemIcon="ic_menu_delete" android.position="actionBar"/>
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="form">
+        <dd:DropDown items="{{ _classList }}" selectedIndex="{{ _currentClassIndex }}" 
+                    selectedIndexChanged="{{ selectedClassIndex }}" 
+                    class="btn btn-outline btn-active text-center text-primary"/>
+                    
+        <dd:DropDown items="{{ _raceList }}" selectedIndex="{{ _currentRaceIndex }}" 
+                selectedIndexChanged="{{ selectedRaceIndex }}" 
+                class="btn btn-outline btn-active text-center text-primary"/>
+    
+        <DockLayout class="btn btn-outline text-primary">
+            <Label text="XP: " textWrap="true" dock="left" style="margin-left: 20; margin-right: 20;"/>
+            <TextField class="input input-border" minWidth="100" hint=""
+                       text="{{ _currentXP }}" blur="{{ editXp }}" returnPress="{{ editXp }}"
+                       keyboardType="number" returnKeyType="done" dock="right"/>
+        </DockLayout>
+    </StackLayout>
+</Page>

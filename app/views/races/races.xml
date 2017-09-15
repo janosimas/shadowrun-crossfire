@@ -1,0 +1,12 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="navigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="Races" icon="" class="action-bar"></ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+        <Button text="Humans" tap="{{ onTapHumans }}" class="btn btn-outline btn-active"/>
+        <Button text="Elves" tap="{{ onTapElves }}" class="btn btn-outline btn-active"/>
+        <Button text="Dwarfs" tap="{{ onTapDwarfs }}" class="btn btn-outline btn-active"/>
+        <Button text="Orks" tap="{{ onTapOrks }}" class="btn btn-outline btn-active"/>
+        <Button text="Trolls" tap="{{ onTapTrolls }}" class="btn btn-outline btn-active"/>
+    </StackLayout>
+</Page>

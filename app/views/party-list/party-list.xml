@@ -1,0 +1,15 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="navigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="Party list" icon="" class="action-bar"></ActionBar>
+    </Page.actionBar>
+    <DockLayout>
+        <Button text="add party" tap="{{ onTapAdd }}"
+                dock="bottom" class="btn btn-outline btn-active"/>
+        <ListView items="{{ partyList }}" itemTap="{{ onItemTap }}" class="list-group" dock="top">
+            <ListView.itemTemplate>
+                <Label text="{{ name }}"
+                       class="h2 btn-outline text-center text-primary"/>
+            </ListView.itemTemplate>
+        </ListView>
+    </DockLayout >
+</Page>
