@@ -13,8 +13,9 @@
                 selectedIndexChanged="{{ selectedRaceIndex }}" 
                 class="btn btn-outline btn-active text-center text-primary"/>
     
-        <DockLayout class="btn btn-outline text-primary">
-            <Label text="XP: " textWrap="true" dock="left" style="margin-left: 20; margin-right: 20;"/>
+        <DockLayout style="color: #30bcff; border-color: #30bcff; border-width: 1;
+                           font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;">
+            <Label text="XP: " textWrap="true" dock="left" style="vertical-align: middle; margin-left: 20; margin-right: 20;"/>
             <TextField class="input input-border" minWidth="100" hint=""
                        text="{{ _currentXP }}" blur="{{ editXp }}" returnPress="{{ editXp }}"
                        keyboardType="number" returnKeyType="done" dock="right"/>
