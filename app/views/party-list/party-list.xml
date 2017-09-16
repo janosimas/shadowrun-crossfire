@@ -11,5 +11,5 @@
                        class="h2 btn-outline text-center text-primary"/>
             </ListView.itemTemplate>
         </ListView>
-    </DockLayout >
+    </DockLayout>
 </Page>

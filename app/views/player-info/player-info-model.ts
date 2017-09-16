@@ -142,12 +142,7 @@ export class PlayerInfoModule extends Observable {
                 this.playerCollection.remove(this.currentPlayer);
                 this.shadowrunDb.save();
 
-                //navigate to player list page
-                var navigationOptions = {
-                    moduleName: 'views/player-list/player-list',
-                    context: { party: this.currentParty }
-                }
-                frameModule.topmost().navigate(navigationOptions);
+                frameModule.topmost().goBack();
             }
         });
     }
