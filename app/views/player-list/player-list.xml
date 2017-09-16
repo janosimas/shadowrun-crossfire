@@ -5,8 +5,8 @@
         </ActionBar>
     </Page.actionBar>
     <DockLayout>
-    <Button text="add player" tap="{{ onTapAdd }}"
-            dock="bottom" class="btn btn-outline btn-active"/>
+        <Button text="add player" tap="{{ onTapAdd }}"
+                dock="bottom" class="btn btn-outline btn-active"/>
         <ListView items="{{ playerList }}" itemTap="{{ onItemTap }}" class="list-group" dock="top" >
             <ListView.itemTemplate>
                 <Label text="{{ name }}"

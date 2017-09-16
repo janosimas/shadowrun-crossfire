@@ -3,8 +3,6 @@ import { ObservableArray, ChangedData, ChangeType } from "tns-core-modules/data/
 import { StackLayout } from "ui/layouts/stack-layout";
 import frameModule = require("ui/frame");
 import dialogs = require("ui/dialogs");
-import * as application from "application";
-import { AndroidApplication, AndroidActivityBackPressedEventData } from "application";
 
 import listViewModule = require("tns-core-modules/ui/list-view");
 import labelModule = require("tns-core-modules/ui/label");
@@ -58,24 +56,6 @@ export class PlayerListModule extends Observable {
         
         this.partyName = this.currentParty.name;
         this.loadItems();
-
-
-        ///////////////////////////////////////////////////////////////////////
-        // the back button should always go to the party-list
-        // * this would not happen if a player was removed and back was pressed
-
-        this.activity = application.android.startActivity ||
-            application.android.foregroundActivity ||
-            frameModule.topmost().android.currentActivity ||
-            frameModule.topmost().android.activity;
-
-        this.activity.onBackPressed = function () {
-            var navigationOptions = {
-                moduleName: 'views/party-list/party-list',
-            }
-
-            frameModule.topmost().navigate(navigationOptions);
-        }
     }
 
     onDelete() {
@@ -91,11 +71,7 @@ export class PlayerListModule extends Observable {
                 this.partyCollection.remove(this.currentParty);
                 this.shadowrunDb.save();
 
-                var navigationOptions = {
-                    moduleName: 'views/party-list/party-list'
-                }
-
-                frameModule.topmost().navigate(navigationOptions);
+                frameModule.topmost().goBack();
             }
         });
     }
