@@ -34,6 +34,10 @@ Any contribution is welcome, just fork the project and open a pull request.
 ## ToDo
 
 - Advantages tracking
-- Icons
+- ~~Icons~~
 - Background images
 - Rules fast reference (fast play?)
+
+## Thanks
+
+- I got the base image for the icon from: [pixabay](https://pixabay.com)
