@@ -15,7 +15,7 @@ export class Player {
     }
 
     public name: string = '';
-    public race: string = Race.human;
+    public race: string = Race.human.name;
     public class: string = Class.face;
     public xp: number = 0;
     public feats: Array<Feat> = new Array<Feat>();
