@@ -1,11 +1,18 @@
 
+export class RaceData {
+    public name: string;
+    public hit_points: number;
+    public cards: number;
+    public nuyen: number;
+};
+
 export namespace Race {
-    export let human = 'Human';
-    export let elf = "Elf";
-    export let dwarf = "Dwarf";
-    export let ork = "Ork";
-    export let troll = "Troll";
-    export let raceList = [human, elf, dwarf, ork, troll];
+    export let human: RaceData = {name:'Human', hit_points: 5, cards: 4, nuyen: 3 } ;
+    export let elf: RaceData = { name: "Elf", hit_points: 4, cards: 4, nuyen: 4 };
+    export let dwarf: RaceData = { name: "Dwarf", hit_points: 5, cards: 2, nuyen: 5 };
+    export let ork: RaceData = { name: "Ork", hit_points: 6, cards: 5, nuyen: 1 };
+    export let troll: RaceData = { name: "Troll", hit_points: 7, cards: 3, nuyen: 2 };
+    export let raceList = [human.name, elf.name, dwarf.name, ork.name, troll.name];
 }
 
 export namespace Class {
