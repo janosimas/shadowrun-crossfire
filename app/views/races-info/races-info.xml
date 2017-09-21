@@ -8,7 +8,7 @@
                       font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
         <Label text="{{ hit_points }}" textWrap="true" col="1" row="0" 
                class="text-center text-primary"
-               style="border-color: #30bcff; border-width: 1;
+               style="color: #ffffff; border-color: #30bcff; border-width: 1;
                       font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
 
         <Label text="Nuyen: " textWrap="true" col="0" row="1"
@@ -16,7 +16,7 @@
                       font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
         <Label text="{{ nuyen }}" textWrap="true" col="1" row="1"
                class="text-center text-primary"
-               style="border-color: #30bcff; border-width: 1;
+               style="color: #ffffff; border-color: #30bcff; border-width: 1;
                       font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
 
         <Label text="Cards: " textWrap="true" col="0" row="2"
@@ -24,7 +24,7 @@
                       font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
         <Label text="{{ cards }}" textWrap="true" col="1" row="2"
                class="text-center text-primary"
-               style="border-color: #30bcff; border-width: 1;
+               style="color: #ffffff; border-color: #30bcff; border-width: 1;
                       font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
     </GridLayout>
 </Page>
