@@ -60,7 +60,7 @@ export class PlayerListModule extends Observable {
 
     onDelete() {
         dialogsModule.confirm({
-            message: "Are you sure you want to remove this party?",
+            message: "Are you sure you want to remove this group?",
             okButtonText: "Yes",
             cancelButtonText: "No"
         }).then((result:boolean) => {
@@ -102,15 +102,15 @@ export class PlayerListModule extends Observable {
     }
 
     onTapAdd() {
-        dialogs.prompt("Add player", "Player name").then(r => {
+        dialogs.prompt("Add runner", "Runner name").then(r => {
             if(r.result)
             {
                 let newPlayerName = r.text.trim();
                 if(this.findInPlayerList(newPlayerName) > -1) {
-                    alert("This player is already in the party.");
+                    alert("This runner is already in the group.");
                 } else {
                     if(this.currentParty.playersId.length == 4) {
-                        alert("This party already have 4 players.");
+                        alert("This group already have 4 runners.");
                     }
                     else {
                         let newPlayer = new Player();

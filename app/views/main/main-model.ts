@@ -11,8 +11,13 @@ export class MainModule extends Observable {
         topmost.navigate("views/races/races");
     }
 
-    public onTapParties() {
+    public onTapGroups() {
         var topmost = frameModule.topmost();
         topmost.navigate("views/party-list/party-list");
+    }
+
+    public onTapReference() {
+        var topmost = frameModule.topmost();
+        topmost.navigate("views/reference/reference");
     }
 }

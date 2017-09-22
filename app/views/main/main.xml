@@ -25,7 +25,8 @@ https://docs.nativescript.org/ui/components.
     class names available for styling your app at https://docs.nativescript.org/ui/theme.
     -->
     <StackLayout>
-        <Button text="Races" tap="{{ onTapRaces }}" class="btn btn-outline btn-active"/>
-        <Button text="Parties" tap="{{ onTapParties }}" class="btn btn-outline btn-active"/>
+        <Button text="Rules reference" tap="{{ onTapReference }}" class="btn btn-outline btn-active"/>
+        <Button text="Race info" tap="{{ onTapRaces }}" class="btn btn-outline btn-active"/>
+        <Button text="Group list" tap="{{ onTapGroups }}" class="btn btn-outline btn-active"/>
     </StackLayout>
 </Page>

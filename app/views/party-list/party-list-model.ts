@@ -45,7 +45,7 @@ export class PartyListModule extends Observable {
     }
 
     onTapAdd() {
-        dialogs.prompt("Create new party", "Party name").then(r => {
+        dialogs.prompt("Create new group", "Group name").then(r => {
             if(r.result)
             {
                 let newPartyName = r.text.trim();

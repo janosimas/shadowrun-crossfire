@@ -4,27 +4,18 @@
     </Page.actionBar>
     <GridLayout columns="auto, *" rows="auto, auto, auto, auto" verticalAlignment="top">
         <Label text="Hit Points: " textWrap="true" col="0" row="0"
-               style="color: #30bcff; border-color: #30bcff; border-width: 1;
-                      font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
+               class="blue-border blue-text" />
         <Label text="{{ hit_points }}" textWrap="true" col="1" row="0" 
-               class="text-center text-primary"
-               style="color: #ffffff; border-color: #30bcff; border-width: 1;
-                      font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
+               class="text-center text-primary blue-border white-text"/>
 
         <Label text="Nuyen: " textWrap="true" col="0" row="1"
-               style="color: #30bcff; border-color: #30bcff; border-width: 1;
-                      font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
+               class="blue-border blue-text"/>
         <Label text="{{ nuyen }}" textWrap="true" col="1" row="1"
-               class="text-center text-primary"
-               style="color: #ffffff; border-color: #30bcff; border-width: 1;
-                      font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
+               class="text-center text-primary blue-border white-text"/>
 
         <Label text="Cards: " textWrap="true" col="0" row="2"
-               style="color: #30bcff; border-color: #30bcff; border-width: 1;
-                      font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
+               class="blue-border blue-text"/>
         <Label text="{{ cards }}" textWrap="true" col="1" row="2"
-               class="text-center text-primary"
-               style="color: #ffffff; border-color: #30bcff; border-width: 1;
-                      font-size: 18; min-height: 36; min-width: 64; padding: 10 10 10 10; margin: 8 16 8 16;"/>
+               class="text-center text-primary blue-border white-text"/>
     </GridLayout>
 </Page>

@@ -1,0 +1,15 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="navigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="Reference" icon="" class="action-bar"></ActionBar>
+    </Page.actionBar>
+    <ScrollView orientation="vertical">
+        <StackLayout>
+            <Label text="{{ playCards }}"       tap="{{ toggleWrap }}" class="text-center text-primary blue-border white-text"/>
+            <Label text="{{ applyDamage }}"     tap="{{ toggleWrap }}" class="text-center text-primary blue-border white-text"/>
+            <Label text="{{ collectingNuyen }}" tap="{{ toggleWrap }}" class="text-center text-primary blue-border white-text"/>
+            <Label text="{{ takeDamage }}"      tap="{{ toggleWrap }}" class="text-center text-primary blue-border white-text"/>
+            <Label text="{{ drawCards }}"       tap="{{ toggleWrap }}" class="text-center text-primary blue-border white-text"/>
+            <Label text="{{ buyCards }}"        tap="{{ toggleWrap }}" class="text-center text-primary blue-border white-text"/>
+        </StackLayout>
+    </ScrollView>
+</Page>
