@@ -1,6 +1,4 @@
 import { Observable } from 'data/observable';
-import * as frameModule from "ui/frame";
-import * as dialogsModule from "ui/dialogs";
 import { RaceData } from "../../resources/enum";
 
 export class RacesInfoModule extends Observable {
